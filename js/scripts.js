@@ -8,12 +8,15 @@ function closeNav(){
 }
 
 /* Modal functions */
-    document.getElementById("button").addEventListener('click', function() {
-        document.querySelector('.modal').style.display = 'flex';
-        })
-    document.querySelector('.modal__close').addEventListener('click', function(){
-        document.querySelector('.modal').style.display = 'none';
-    })
+
+    function openModal(){
+        document.querySelector(".modal").style.display = "flex";
+    }
+
+    function closeModal(){
+        document.querySelector(".modal").style.display = "none";
+    }
+
 
 /* Social Media sharedcounts */
 

@@ -81,26 +81,36 @@ button {
         padding-top: 1rem; }
       body section .banner p {
         padding: 0.5em;
-        font-size: 23px; } }
+        font-size: 23px; }
+    body section .modal .modal__content {
+      width: 350px;
+      height: 250px; }
+    body section .modal .modal__text {
+      padding: 0.5rem; }
+      body section .modal .modal__text h2 {
+        font-size: 0.9rem; }
+      body section .modal .modal__text p {
+        font-size: 0.43rem; }
+      body section .modal .modal__text a img {
+        width: 15px;
+        height: 15px;
+        margin: 0.2rem; }
+    body section .modal__close {
+      color: #4e4542;
+      font-size: 1.3em;
+      position: absolute;
+      top: 0.25em;
+      right: 0.75em; } }
 
-/*@media only screen and (max-width: 768px){
-    section {
-        .modal {
-            .modal__content{
-                width:45em;
-                height:45%;
-            }
-            .modal__text{
-                h2{
-                    font-size: 32px;
-                }
-                p{
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-}*/
+@media only screen and (max-width: 768px) {
+  section .modal .modal__content {
+    width: 650px;
+    height: 420px; }
+  section .modal .modal__text h2 {
+    font-size: 1.5rem; }
+  section .modal .modal__text p {
+    font-size: 0.7rem; } }
+
 @media only screen and (max-width: 360px) {
   body section {
     padding: 2em 0 2em 0; }
@@ -125,28 +135,31 @@ button {
     body section .card-mod-2 .profile-img {
       margin-top: -85px; }
     body section .modal .modal__content {
-      width: 62em;
-      height: 85%; }
+      width: 290px;
+      height: 200px; }
     body section .modal .modal__img {
-      height: 100%; }
-      body section .modal .modal__img img {
-        width: auto;
-        height: 100%; }
+      display: none; }
     body section .modal .modal__text {
       height: 100%;
       width: auto;
-      padding: 3rem 3rem 3rem 0.5rem; }
+      padding: 1rem;
+      align-items: center; }
       body section .modal .modal__text h2 {
-        font-size: 42px;
-        color: #322D2B;
+        font-size: 0.9rem;
         padding-bottom: 0.25em; }
       body section .modal .modal__text p {
-        font-size: 16px;
+        font-size: 0.35rem;
         padding: 0.55em 0; }
       body section .modal .modal__text a img {
-        width: 30px;
-        height: 30px;
-        margin: 1rem 3px; } }
+        width: 20px;
+        height: 20px;
+        margin: 0.2rem; }
+    body section .modal .modal__close {
+      color: #4e4542;
+      font-size: 1.6em;
+      position: absolute;
+      top: 0.25em;
+      right: 0.75em; } }
 
 /* Mobile Nav */
 .overlay {
@@ -370,6 +383,11 @@ footer .footer {
     height: 40px;
     margin: 3px; }
 
+.wrapper-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .modal {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100vw;
@@ -381,10 +399,15 @@ footer .footer {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 1em; }
+  padding: 1em;
+  z-index: 2;
+  padding: 0;
+  transition: opacity 500ms ease-in; }
   .modal .modal__content {
-    width: 85em;
-    height: 85%;
+    width: 900px;
+    height: 560px;
+    max-width: 1200px;
+    max-height: 760px;
     background-color: #FFF;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -392,44 +415,48 @@ footer .footer {
     align-items: center;
     justify-content: center;
     position: relative;
-    flex-direction: row; }
+    transition: opacity 500ms ease-in; }
   .modal .modal__img {
     height: 100%;
+    width: 54%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     border-right: solid 10px rgba(128, 72, 150, 0.1);
     background-color: rgba(128, 72, 150, 0.5);
     clip-path: polygon(0 0, 85% 0%, 100% 100%, 0% 100%);
-    object-fit: cover; }
+    overflow: hidden; }
     .modal .modal__img img {
       width: auto;
       height: 100%;
       object-fit: contain; }
   .modal .modal__text {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: auto;
-    padding: 3rem 3rem 3rem 0.5rem; }
+    width: 46%;
+    padding: 3em 3em 2em 1em; }
     .modal .modal__text h2 {
-      font-size: 42px;
+      font-size: 2.5rem;
       color: #322D2B;
       letter-spacing: 0;
-      padding-bottom: 0.25em; }
+      padding: 0.25em 0em; }
     .modal .modal__text p {
-      font-size: 16px;
+      font-size: 0.9rem;
       color: #73716C;
       letter-spacing: 0;
-      padding: 0.55em 0; }
+      padding: 0.75em 0; }
     .modal .modal__text a img {
       width: 30px;
       height: 30px;
-      margin: 1rem 3px; }
+      margin: 1rem 3px;
+      display: inline-block; }
 
 .modal__close {
   color: #4e4542;
   font-size: 3em;
   position: absolute;
   top: 0.25em;
-  right: 0.75em; }
+  right: 0.75em;
+  transition: all .5s ease-in-out; }
