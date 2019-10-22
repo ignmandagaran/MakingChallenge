@@ -1,0 +1,108 @@
+.card__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Name of profile*/
+    h1{
+        font-size: 24px;
+        color: #4E4542;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 1rem 0 0 0;
+    }
+    /* Button */
+    .btn{
+        padding: 1rem 2.5rem;
+        width: 200px;
+        height: 40px;
+        line-height : 10px;
+        background: #5AA34C;
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        -o-transition: all .5s;
+        &:hover{
+            transform: translateY(-2px);
+            -webkit-transform: translateY(-2px);
+            -moz-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+            -o-transform: translateY(-2px);
+            box-shadow: 0 5px 35px 0 rgba(115,113,108,0.35);
+
+        }
+        &:active{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }   
+    }
+}
+
+/* About name of */
+.about{
+    font-size: 16px;
+    color: #8D8583;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 24px;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Design with black and white image and fully inside */
+.card__mod-1{
+    background: #FFFFFF;
+    box-shadow: 0 5px 35px 0 rgba(115,113,108,0.35);
+    border-radius: 3px;
+    border-radius: 3px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    height: 427px;
+    width: 370px;
+    /* Image */
+    .profile__img{
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        margin-top: -1rem;
+    }
+}
+
+/* Design with color image and slightly outward*/
+.card__mod-2{
+    background: #FFFFFF;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.20);
+    border-radius: 3px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 2rem 2rem 2rem;
+    height: 334px;
+    width: 370px;
+    /* Name of profile*/
+    .profile__img{
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        margin-top: -103px;
+    }
+}

@@ -1,0 +1,120 @@
+body .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 80px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+    a{
+        color: rgba(78, 69, 66, 1);
+    }
+    button{
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+    }
+}
+
+/* Logo MakingSense*/
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: 24px;
+}
+
+/* Items 1,2,3,4*/
+.nav__links {
+    li {
+    display: inline-block;
+    padding: 0px 20px;
+
+        a {
+            transition: all 0.3s ease 0s;
+            
+            &:hover{
+                color: rgba(90, 163, 76, 1);
+            }
+        }
+    }
+}
+
+/* Mobile menu hidden*/
+.menu {
+    display: none;
+}
+
+/* Buttom of mobile menu*/
+.btn__menu {
+    padding: 9px 25px;
+    background-color:  rgba(90, 163, 76, 0.8);
+    border: none;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    &:hover {
+      background-color:  rgba(90, 163, 76, 1);
+    }
+    i{
+        color: #FFF;
+    }
+  }
+
+  /* ---------- MOBILE NAVBAR ------------*/
+
+/* Screen cover and container*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top: 0;
+    background-color: rgb(160, 145, 91);
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    /* Close buttom */
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+    /* Item 1,2,3,4 */
+    .overlay__content {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    a {
+        padding: 15px;
+        font-size: 36px;
+        color: rgba(78, 69, 66, 1);
+        display: block;
+        transition: all 0.3s ease 0s;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -ms-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        cursor: pointer;
+        &:hover, &:focus{
+            color: #FFF;
+         }
+    }
+}
