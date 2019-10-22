@@ -41,8 +41,8 @@
 ##  Points to mark
 
 - The preprocessor I chose was **scss** because I find it easier to handle its syntax.
-- The background tone of the cell phone menu is part of a pant palette generated with coolors.co based on the colors given in the **mockup**.
-- I had to **crop and change** the image format of ***Avatar.jpg*** to **.png** so that it looks fully round and has a transparent background. I also had to darken the social media icons to make them more visible in the modal.
+- The background tone of the mobile menu is part of a pant palette generated with coolors.co based on the colors given in the **mockup**.
+- I had to **crop** and **change** the image format of ***Avatar.jpg*** to **.png** so that it looks fully round and has a transparent background. I also had to darken the social media icons to make them more visible in the modal.
 - The task runner automation was done with **Gulp** in the file ***gulpfile.js*** The file have two atomization: the **minification** of css code in the folder "min" inside the css folder and the **compilation** of scss file.
 - The integration of social media **shared counters** was done with the file ***shared.js***
 - **I removed** the modal image in resolutions lower than 360px in order to preserve the readability of the text.  I don't have time to find a better alternative.
