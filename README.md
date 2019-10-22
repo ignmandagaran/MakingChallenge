@@ -62,6 +62,6 @@ I paid **special attention** to the resposive behavior in screen sizeing of Appl
 
 ## Comments
 
-I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.</br>
+I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.</br></br>
 I thank Hernan and Nazareno for having explained to me about relatives units, flexbox, transition and the difference of Sass and Scss since they where keywords at the time of technic research. Also to Salome; the whole selection process will be an enlightening experience for me beyond the decision you make.
 
