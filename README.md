@@ -51,17 +51,17 @@
 
 ## Desicion-making of responsive approach
 
-The responsive design was made with **three breakpoints**:
+The responsive design was made with **three breakpoints**:</br>
 
 - 700px y 768px (i had to add one more to resolve a issue with text banner height) for **tablets**
-- 360px for **small smartphones**
+- 360px for **small smartphones**</br>
 
 The positioning of all elements of the webpage are made with ***flexbox*** as well as the positioning of modal and his content. This helped me a lot to **repositioning** the elements respecting the position of his brother elements when the screen size change.
-The navbar items are transformed in a menu button when the width size of the screen change to equal or lower to **700 pixeles** and its open with a **onclick** event of JavaScript where change a default width 0 to a 100% width. Also have a transition effect to soften that.
+The navbar items are transformed in a menu button when the width size of the screen change to equal or lower to **700 pixeles** and its open with a **onclick** event of JavaScript where change a default width 0 to a 100% width. Also have a transition effect to soften that.</br>
 I paid **special attention** to the resposive behavior in screen sizeing of Apple dispositives such as **IPads** and **IPhones**.
 
 ## Comments
 
-I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.
+I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.</br>
 I thank Hernan and Nazareno for having explained to me about relatives units, flexbox, transition and the difference of Sass and Scss since they where keywords at the time of technic research. Also to Salome; the whole selection process will be an enlightening experience for me beyond the decision you make.
 
