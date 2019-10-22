@@ -43,25 +43,25 @@
 - The preprocessor I chose was **scss** because I find it easier to handle its syntax.
 - The background tone of the mobile menu is part of a pant palette generated with coolors.co based on the colors given in the **mockup**.
 - I had to **crop** and **change** the image format of ***Avatar.jpg*** to **.png** so that it looks fully round and has a transparent background. I also had to darken the social media icons to make them more visible in the modal.
-- The task runner automation was done with **Gulp** in the file ***gulpfile.js*** The file have two atomization: the **minification** of css code in the folder "min" inside the css folder and the **compilation** of scss file.
+- The task runner automation was done with **Gulp** in the file ***gulpfile.js*** The file has two atomizations: the **minification** of css code in the folder "min" inside the css folder and the **compilation** of scss file.
 - The integration of social media **shared counters** was done with the file ***shared.js***
-- **I removed** the modal image in resolutions lower than 360px in order to preserve the readability of the text.  I don't have time to find a better alternative.
-- The **opening and closing** of the modal and the mobile menu are made ***onlick*** event javascript.
+- **I removed** the modal image in resolutions lower than 360px in order to preserve the readability of the text.  I didn't have enough time to find a better alternative.
+- The **opening and closing** of the modal and the mobile menu are made with an ***onlick*** event with JavaScript.
 - I avoided the use of **external source icons** respecting the interpretation of the requirements specification.
 
-## Desicion-making of responsive approach
+## Decision-making of responsive approach
 
 The responsive design was made with **three breakpoints**:</br>
 
-- 700px y 768px (i had to add one more to resolve a issue with text banner height) for **tablets**
+- 700px y 768px (i had to add one more to resolve an issue with the text banner height) for **tablets**
 - 360px for **small smartphones**</br>
 
-The positioning of all elements of the webpage are made with ***flexbox*** as well as the positioning of modal and his content. This helped me a lot to **repositioning** the elements respecting the position of his brother elements when the screen size change.
-The navbar items are transformed in a menu button when the width size of the screen change to equal or lower to **700 pixeles** and its open with a **onclick** event of JavaScript where change a default width 0 to a 100% width. Also have a transition effect to soften that.</br>
-I paid **special attention** to the resposive behavior in screen sizeing of Apple dispositives such as **IPads** and **IPhones**.
+The positioning of all elements of the webpage were done with ***flexbox*** as well as the positioning of modal and it's content. This helped me a lot to **reposition** the elements respecting the position of it's brother elements when the screen size changes.
+The navbar items are transformed in a menu button when the width of the screen changes below **700 pixels** and opens with an **onclick** event to cover the whole screen.</br>
+I've paid **special attention** to the resposive behavior in screen sizing in Apple devices such as **IPads** and **IPhones**.
 
 ## Comments
 
-I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.</br></br>
-I thank Hernan and Nazareno for having explained to me about relatives units, flexbox, transition and the difference of Sass and Scss since they where keywords at the time of technic research. Also to Salome; the whole selection process will be an enlightening experience for me beyond the decision you make.
-
+I am aware that there are details of the design to be fixed, like the design of the social media icons in the footer or in the modal.
+I didn't had enough time to spare, but I would have improved this amongst other things .</br></br>
+I appreciate Hernan and Nazareno for having taken the time to explain to me about relatives units, flexbox, transition and the difference of Sass and Scss since they where keywords at the time of the technical research and also to Salome because not just the technical interview but the whole selection process was an enlightening experience for me, beyond the decision you make.
