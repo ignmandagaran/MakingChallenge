@@ -15,6 +15,7 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "gulp-uglifycss": "^1.1.0"
+    "gulp-uglifycss": "^1.1.0",
+    "jQuery": "^1.7.4"
   }
 }
