@@ -1,7 +1,7 @@
 # MakingChallenge
-## This file will describe the general aspects that were taken for the development of the challenge.
+##### This file will describe the general aspects that were taken for the development of the challenge.
 
-## FILE STRUCTURE:
+## File dir structure:
 
 - **vendors**/
   - js
@@ -60,5 +60,8 @@ The positioning of all elements of the webpage are made with ***flexbox*** as we
 The navbar items are transformed in a menu button when the width size of the screen change to equal or lower to **700 pixeles** and its open with a **onclick** event of JavaScript where change a default width 0 to a 100% width. Also have a transition effect to soften that.
 I paid **special attention** to the resposive behavior in screen sizeing of Apple dispositives such as **IPads** and **IPhones**.
 
+## Comments
 
+I am aware that are details of the design to be fixed as the design of the social media icons in the footer or in the modal but didn't have time to solved it.
+I thank Hernan and Nazareno for having explained to me about relatives units, flexbox, transition and the difference of Sass and Scss since they where keywords at the time of technic research. Also to Salome; the whole selection process will be an enlightening experience for me beyond the decision you make.
 
