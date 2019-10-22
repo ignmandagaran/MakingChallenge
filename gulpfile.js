@@ -19,7 +19,7 @@ gulp.task('css', () => {
       .pipe(uglifycss({
         "uglyComments": true
       }))
-      .pipe(gulp.dest('./dist/'));
+      .pipe(gulp.dest('./css/min/'));
   });
 
 // task automation

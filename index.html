@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Notification bar color in mobiles -->
+        <meta name="theme-color" content="#4e4542">
+        <!-- Social media card sharing -->
+        <meta name="description" content="Challenge for Making Sense!" />
+        <meta name="twitter:card" value="summary">
+        <meta property="og:title" content="Making Sense Challenge" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="URL@EXAMPLE" />
+        <meta property="og:image" content="URL@IMG__EXAMPLE" />
+        <meta property="og:description" content="Challenge for Making Sense!" />
+        <meta property='og:locale' content='es_AR'/>
         <title>Making Challenge</title>
         <link rel="stylesheet" type='text/css' href="css/style.css">
-
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/shared.js"></script>
     </head>
-
     <body>
-
         <!-- Nav -->
         <header class="nav">
             <img class="logo" src="images/Mask.jpg" alt="logo">
             <nav>
-                <ul class="nav-links">
+                <ul class="nav__links">
                     <li><a href="#">Item 1</a></li>
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
                     <li><a href="#">Item 4</a></li>
                 </ul>
             </nav>
-            <a onclick="openNav()" class="menu" href="#"><button>Menu</button></i></a>
-        </header>
-
+            <a onclick="openNav()" class="menu" href="#"><button class="btn__menu">Menu</button></i></a>
         <!-- Mobile Nav -->
         <div id="mobile_menu" class="overlay">
             <a onclick="closeNav()" class="close">&times;</a>
-            <div class="overlay-content">
+            <div class="overlay__content">
                     <a href="#">Item 1</a>
                     <a href="#">Item 2</a>
                     <a href="#">Item 3</a>
                     <a href="#">Item 4</a>
             </div>
         </div>
-
+        </header>
         <!-- Banner -->
         <section>
             <div class="conteiner">
@@ -51,51 +57,50 @@
                 </div>
             </div>
         </section>
-
         <section>
             <div class="conteiner">
-                <div class="card-wrapper" id="asd">
-                    <div class="card-mod-1">
-                        <img src="images/Avatar.png" alt="Profile image" class="profile-img">
+                <div class="card__wrapper" id="asd">
+                    <div class="card__mod-1">
+                        <img src="images/Avatar.png" alt="Profile image" class="profile__img">
                         <h1>Mariana Esteban</h1>
                         <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" onclick="openModal()" id="button" class="btn">View Profile</a>
                     </div>
-                    <div class="card-mod-1">
-                        <img src="images/Avatar.png" alt="Profile image" class="profile-img">
+                    <div class="card__mod-1">
+                        <img src="images/Avatar.png" alt="Profile image" class="profile__img">
                         <h1>Mariana Esteban</h1>
                         <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" onclick="openModal()" class="btn">View Profile</a>
                     </div>
-                    <div class="card-mod-1">
-                        <img src="images/Avatar.png" alt="Profile image" class="profile-img">
+                    <div class="card__mod-1">
+                        <img src="images/Avatar.png" alt="Profile image" class="profile__img">
                         <h1>Mariana Esteban</h1>
                         <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                         <a href="#" onclick="openModal()" id="button" class="btn">View Profile</a>
                     </div>
                 </div>
-                <div class="card-wrapper">
-                        <div class="card-mod-2">
-                            <img src="images/Avatar-color.png" alt="Profile image" class="profile-img">
+                <div class="card__wrapper">
+                        <div class="card__mod-2">
+                            <img src="images/Avatar-color.png" alt="Profile image" class="profile__img">
                             <h1>Mariana Esteban</h1>
                             <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="#" onclick="openModal()" id="button" class="btn">View Profile</a>
                         </div>
-                        <div class="card-mod-2">
-                            <img src="images/Avatar-color.png" alt="Profile image" class="profile-img">
+                        <div class="card__mod-2">
+                            <img src="images/Avatar-color.png" alt="Profile image" class="profile__img">
                             <h1>Mariana Esteban</h1>
                             <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="#" onclick="openModal()" id="button" class="btn">View Profile</a>
                         </div>
-                        <div class="card-mod-2">
-                            <img src="images/Avatar-color.png" alt="Profile image" class="profile-img">
+                        <div class="card__mod-2">
+                            <img src="images/Avatar-color.png" alt="Profile image" class="profile__img">
                             <h1>Mariana Esteban</h1>
                             <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="#" onclick="openModal()" id="button" class="btn">View Profile</a>
                         </div>
                     </div>
                 </div>
-                <div id="#modal" class="wrapper-modal">
+                <div id="#modal" class="wrapper__modal">
                     <div class="modal" id="open">
                         <div class="modal__content">
                             <div class="modal__img">
@@ -107,7 +112,7 @@
                                 <p>Lorem ipsum dolor sit amet, <strong>consectetur adipisicing elit, sed do </strong>eiusmodtempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua.</p>
                                 <p>Duis aute irure dolor in <strong>reprehenderit in voluptate velit esse cillum dolore </strong>eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor <strong>incididunt ut labore </strong>et dolore magna aliqua.</p>
-                                <div class="social-modal">
+                                <div class="social__modal">
                                     <a id="facebook" href="https://www.facebook.com/"><img src="images/Social/Facebook_dark.png" alt=""></a>
                                     <a id="twitter" href="https://twitter.com/"><img src="images/Social/Twitter_dark.png" alt="">
                                 </div>
@@ -117,16 +122,17 @@
                 </div>
             </section>
             <footer>
-                <div class="footer">
-                    <ul id="sharedCount" class="social-media">
-                        <li><a id="facebook" href="https://www.facebook.com/"><img src="images/Social/Facebook.png" alt=""></a></li>
-                        <li><a id="instagram" href="https://www.instagram.com/"><img src="images/Social/Instagram.png" alt=""></a></li>
-                        <li><a id="twitter" href="https://twitter.com/"><img src="images/Social/Twitter.png" alt=""></a></li>
-                        <li><a id="linkedin" href="https://www.linkedin.com/"><img src="images/Social/linkedin.png" alt=""></a></li>
+                <div class="socialShare">
+                    <ul class="social__icons">
+                        <li><a class="btnz share facebook" href="#"><img src="images/Social/Facebook.png" alt=""><span class="count"></span></a></li>
+                        <li><a class="btnz share instagram" href="#"><img src="images/Social/Instagram.png" alt=""><span class="count"></span></a></li>
+                        <li><a class="btnz share twitter" href="#"><img src="images/Social/Twitter.png" alt=""></a><span class="count"></span></li>
+                        <li><a class="btnz share linkedin" href="#"><img src="images/Social/linkedin.png" alt=""></a><span class="count"></span></li>
                     </ul>
                 </div>
             </footer>
 
+        <script type="text/javascript">parseSharedCount('https://www.sharedcount.com/api-docs/get-default');</script>
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
     </body>
