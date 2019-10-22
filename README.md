@@ -53,7 +53,7 @@
 
 The responsive design was made with **three breakpoints**:
 
-- 700px y 768px (i have to add one more to resolve a issue with text banner height) for **tablets**
+- 700px y 768px (i had to add one more to resolve a issue with text banner height) for **tablets**
 - 360px for **small smartphones**
 
 The positioning of all elements of the webpage are made with ***flexbox*** as well as the positioning of modal and his content. This helped me a lot to **repositioning** the elements respecting the position of his brother elements when the screen size change.
