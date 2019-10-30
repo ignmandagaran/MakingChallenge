@@ -26,7 +26,7 @@
    - acolor.png
    - Avatar.jpg
    - Avatar.png
-   - Avatar-color.png // Avatar.jpg editing
+   - Avatar-color.png // Avatar.jpg edited
    - color.png
    - Mask.jpg
    - social/
