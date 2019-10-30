@@ -31,11 +31,11 @@
    - Mask.jpg
    - social/
      - Facebook.png
-     - Facebook_dark.png // Facebook.png editing
+     - Facebook_dark.png // Facebook.png edited
      - Instagram.png
      - linkedin.png
      - Twitter.png
-     - Twitter_dark.png // Twitter.png editing
+     - Twitter_dark.png // Twitter.png edited
      - Youtube.png
      
 ##  Points to mark
